@@ -1,10 +1,11 @@
-import Head from 'next/head';
-import AppBar from '../components/appBar';
+import Layout from '../components/layout';
 
 export default function Home() {
   return (
-    <div>
-      <AppBar/>
-    </div>
+    <>
+      <Layout>
+        {/* TODO: show content */}
+      </Layout>
+    </>
   )
 }
