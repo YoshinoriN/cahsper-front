@@ -1,20 +1,19 @@
 import { Comment } from '../../types/comment'
-import CommentsComponent from '../../components/comments'
+import CommentsComponent from '../../components/comments/comments'
 import { getComments } from '../comments/api';
+import { Container } from '@material-ui/core';
 
 export default function Home({comments}) {
-  const topComment = comments[0]
-  const restComments = comments.slice(1)
+  const c = comments.slice(0)
   return (
-    <div>
-      <CommentsComponent comments={restComments as Array<Comment>} />
-    </div>
+    <Container maxWidth="md">
+      <CommentsComponent comments={c as Array<Comment>} />
+    </Container>
   )
 }
 
 export async function getStaticProps() {
   const comments: Array<Comment> = await getComments()
-
   return {
     props: { comments }
   }
