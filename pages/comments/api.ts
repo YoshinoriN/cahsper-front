@@ -1,9 +1,9 @@
 import { Comment } from '../../types/comment'
-import config from '../../config'
+import { api } from '../../config'
 
 export async function getComments(): Promise<Array<Comment>> {
   const comments: Promise<Array<Comment>> = await fetch(
-    `https://${config.apiUrl}/comments/`,
+    `https://${api.url}/comments/`,
     {
       method: 'GET',
       headers: {
