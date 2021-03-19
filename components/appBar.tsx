@@ -1,6 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { Container, AppBar, Toolbar,IconButton, Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Container, AppBar, Toolbar, Typography } from '@material-ui/core';
 
 export default function Home() {
   return (
