@@ -5,9 +5,7 @@ export default function Layout({children}) {
   return (
     <>
       <AppBar />
-      <div>
         <main>{children}</main>
-      </div>
       <Footer />
     </>
   )
