@@ -1,3 +1,4 @@
+import "../styles/global.scss";
 import Layout from '../components/layout'
 import HeaderMeta from '../components/headerMeta'
 
