@@ -6,7 +6,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
 
-import { Comment } from '../../types/comment'
+import { Comment } from '../../types/comment';
 
 const CommentComponent: React.FunctionComponent<{ comment: Comment }> = ({comment}) => {
   return(
