@@ -1,8 +1,8 @@
-import { Comment } from '../../types/comment'
+import { CommentResponse } from '../../types/comment'
 import { api } from '../../config'
 
-export async function getComments(): Promise<Array<Comment>> {
-  const comments: Promise<Array<Comment>> = await fetch(
+export async function getComments(): Promise<Array<CommentResponse>> {
+  const CommentResponse: Promise<Array<CommentResponse>> = await fetch(
     `https://${api.url}/comments/`,
     {
       method: 'GET',
@@ -12,5 +12,5 @@ export async function getComments(): Promise<Array<Comment>> {
     }
   ).then((response) => response.json())
   // TODO: error handling
-  return comments
+  return CommentResponse
 }
