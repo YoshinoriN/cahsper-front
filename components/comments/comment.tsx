@@ -11,8 +11,8 @@ import { Comment } from '../../types/comment'
 const CommentComponent: React.FunctionComponent<{ comment: Comment }> = ({comment}) => {
   return(
     <TimelineItem>
-      <TimelineOppositeContent style={{flex: 0.1}}>
-        <Typography color="textSecondary">
+      <TimelineOppositeContent style={{flex: 0.2}}>
+        <Typography className="local-date-time" color="textSecondary">
           {comment.createdAt}
         </Typography>
       </TimelineOppositeContent>
